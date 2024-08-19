@@ -434,11 +434,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\آموزش\\Scable Book Store-project3\\BookList_Rabbit\\RestApi\\RestApiServices\\RestApiServices.csproj",
+      "projectUniqueName": "F:\\آموزش\\Scable Book Store-project3\\BookList_Rabbit\\BookStore_Scable\\RestApiServices\\RestApiServices.csproj",
       "projectName": "RestApiServices",
-      "projectPath": "F:\\آموزش\\Scable Book Store-project3\\BookList_Rabbit\\RestApi\\RestApiServices\\RestApiServices.csproj",
+      "projectPath": "F:\\آموزش\\Scable Book Store-project3\\BookList_Rabbit\\BookStore_Scable\\RestApiServices\\RestApiServices.csproj",
       "packagesPath": "C:\\Users\\AsusIran\\.nuget\\packages\\",
-      "outputPath": "F:\\آموزش\\Scable Book Store-project3\\BookList_Rabbit\\RestApi\\RestApiServices\\obj\\",
+      "outputPath": "F:\\آموزش\\Scable Book Store-project3\\BookList_Rabbit\\BookStore_Scable\\RestApiServices\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

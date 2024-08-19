@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "djCMshUGLTA=",
+  "dgSpecHash": "jfRO16AqU38=",
   "success": true,
-  "projectFilePath": "F:\\آموزش\\Scable Book Store-project3\\BookList_Rabbit\\RestApi\\RabbitSender\\RabbitSender.csproj",
+  "projectFilePath": "F:\\آموزش\\Scable Book Store-project3\\BookList_Rabbit\\BookStore_Scable\\RabbitSender\\RabbitSender.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\AsusIran\\.nuget\\packages\\microsoft.extensions.configuration\\8.0.0\\microsoft.extensions.configuration.8.0.0.nupkg.sha512",
     "C:\\Users\\AsusIran\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\8.0.0\\microsoft.extensions.configuration.abstractions.8.0.0.nupkg.sha512",

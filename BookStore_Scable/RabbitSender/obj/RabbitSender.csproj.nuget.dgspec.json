@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "F:\\آموزش\\Scable Book Store-project3\\BookList_Rabbit\\RestApi\\RabbitSender\\RabbitSender.csproj": {}
+    "F:\\آموزش\\Scable Book Store-project3\\BookList_Rabbit\\BookStore_Scable\\RabbitSender\\RabbitSender.csproj": {}
   },
   "projects": {
-    "F:\\آموزش\\Scable Book Store-project3\\BookList_Rabbit\\RestApi\\RabbitSender\\RabbitSender.csproj": {
+    "F:\\آموزش\\Scable Book Store-project3\\BookList_Rabbit\\BookStore_Scable\\RabbitSender\\RabbitSender.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\آموزش\\Scable Book Store-project3\\BookList_Rabbit\\RestApi\\RabbitSender\\RabbitSender.csproj",
+        "projectUniqueName": "F:\\آموزش\\Scable Book Store-project3\\BookList_Rabbit\\BookStore_Scable\\RabbitSender\\RabbitSender.csproj",
         "projectName": "RabbitSender",
-        "projectPath": "F:\\آموزش\\Scable Book Store-project3\\BookList_Rabbit\\RestApi\\RabbitSender\\RabbitSender.csproj",
+        "projectPath": "F:\\آموزش\\Scable Book Store-project3\\BookList_Rabbit\\BookStore_Scable\\RabbitSender\\RabbitSender.csproj",
         "packagesPath": "C:\\Users\\AsusIran\\.nuget\\packages\\",
-        "outputPath": "F:\\آموزش\\Scable Book Store-project3\\BookList_Rabbit\\RestApi\\RabbitSender\\obj\\",
+        "outputPath": "F:\\آموزش\\Scable Book Store-project3\\BookList_Rabbit\\BookStore_Scable\\RabbitSender\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

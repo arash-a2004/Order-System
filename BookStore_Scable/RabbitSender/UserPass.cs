@@ -12,7 +12,6 @@ namespace RabbitSender
         public string UserName { get; private set; }
         public string Password { get; private set; }
         private readonly IConfiguration configuration;
-
         public UserPass(IConfiguration configuration1)
         {
             configuration = configuration1;

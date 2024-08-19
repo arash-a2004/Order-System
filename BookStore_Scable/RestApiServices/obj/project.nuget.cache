@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "fZOMIjUoghI=",
+  "dgSpecHash": "Fopcs7dTan0=",
   "success": true,
-  "projectFilePath": "F:\\آموزش\\Scable Book Store-project3\\BookList_Rabbit\\RestApi\\RestApiServices\\RestApiServices.csproj",
+  "projectFilePath": "F:\\آموزش\\Scable Book Store-project3\\BookList_Rabbit\\BookStore_Scable\\RestApiServices\\RestApiServices.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\AsusIran\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
     "C:\\Users\\AsusIran\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",

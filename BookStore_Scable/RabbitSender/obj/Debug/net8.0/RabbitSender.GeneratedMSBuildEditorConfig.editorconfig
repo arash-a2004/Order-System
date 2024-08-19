@@ -8,6 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = RabbitSender
-build_property.ProjectDir = F:\آموزش\Scable Book Store-project3\BookList_Rabbit\RestApi\RabbitSender\
+build_property.ProjectDir = F:\آموزش\Scable Book Store-project3\BookList_Rabbit\BookStore_Scable\RabbitSender\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 

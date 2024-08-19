@@ -16,8 +16,10 @@ configuration = new  ConfigurationBuilder()
 serviceCollection.AddSingleton<IConfiguration>(configuration);
 serviceCollection.AddSingleton<UserPass>();
 
-//test
+//test configuration 
 var serviceProvider = serviceCollection.BuildServiceProvider();
 var testInstance = serviceProvider.GetService<UserPass>();
 testInstance.GetData();
+
+
 

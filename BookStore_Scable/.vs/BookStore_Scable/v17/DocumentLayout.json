@@ -1,18 +1,14 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "F:\\\u0622\u0645\u0648\u0632\u0634\\Scable Book Store-project3\\BookList_Rabbit\\RestApi\\",
+  "WorkspaceRootPath": "F:\\\u0622\u0645\u0648\u0632\u0634\\Scable Book Store-project3\\BookList_Rabbit\\BookStore_Scable\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{FBB6C1CC-5679-4177-B791-6F223625C33F}|RabbitSender\\RabbitSender.csproj|f:\\\u0622\u0645\u0648\u0632\u0634\\scable book store-project3\\booklist_rabbit\\restapi\\rabbitsender\\userpass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FBB6C1CC-5679-4177-B791-6F223625C33F}|RabbitSender\\RabbitSender.csproj|solutionrelative:rabbitsender\\userpass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{984F07A8-B9AF-438F-BEA8-EC7AE917505A}|Reciever1\\Reciever1.csproj|f:\\\u0622\u0645\u0648\u0632\u0634\\scable book store-project3\\booklist_rabbit\\bookstore_scable\\reciever1\\bookstoredbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{984F07A8-B9AF-438F-BEA8-EC7AE917505A}|Reciever1\\Reciever1.csproj|solutionrelative:reciever1\\bookstoredbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FBB6C1CC-5679-4177-B791-6F223625C33F}|RabbitSender\\RabbitSender.csproj|f:\\\u0622\u0645\u0648\u0632\u0634\\scable book store-project3\\booklist_rabbit\\restapi\\rabbitsender\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FBB6C1CC-5679-4177-B791-6F223625C33F}|RabbitSender\\RabbitSender.csproj|solutionrelative:rabbitsender\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FBB6C1CC-5679-4177-B791-6F223625C33F}|RabbitSender\\RabbitSender.csproj|f:\\\u0622\u0645\u0648\u0632\u0634\\scable book store-project3\\booklist_rabbit\\restapi\\rabbitsender\\appsetting.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{FBB6C1CC-5679-4177-B791-6F223625C33F}|RabbitSender\\RabbitSender.csproj|solutionrelative:rabbitsender\\appsetting.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{984F07A8-B9AF-438F-BEA8-EC7AE917505A}|Reciever1\\Reciever1.csproj|f:\\\u0622\u0645\u0648\u0632\u0634\\scable book store-project3\\booklist_rabbit\\bookstore_scable\\reciever1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{984F07A8-B9AF-438F-BEA8-EC7AE917505A}|Reciever1\\Reciever1.csproj|solutionrelative:reciever1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,7 +18,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -38,40 +34,29 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "UserPass.cs",
-              "DocumentMoniker": "F:\\\u0622\u0645\u0648\u0632\u0634\\Scable Book Store-project3\\BookList_Rabbit\\RestApi\\RabbitSender\\UserPass.cs",
-              "RelativeDocumentMoniker": "RabbitSender\\UserPass.cs",
-              "ToolTip": "F:\\\u0622\u0645\u0648\u0632\u0634\\Scable Book Store-project3\\BookList_Rabbit\\RestApi\\RabbitSender\\UserPass.cs",
-              "RelativeToolTip": "RabbitSender\\UserPass.cs",
-              "ViewState": "AQIAAAUAAAAAAAAAAAAQwBgAAAAIAAAA",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "F:\\\u0622\u0645\u0648\u0632\u0634\\Scable Book Store-project3\\BookList_Rabbit\\BookStore_Scable\\Reciever1\\Program.cs",
+              "RelativeDocumentMoniker": "Reciever1\\Program.cs",
+              "ToolTip": "F:\\\u0622\u0645\u0648\u0632\u0634\\Scable Book Store-project3\\BookList_Rabbit\\BookStore_Scable\\Reciever1\\Program.cs",
+              "RelativeToolTip": "Reciever1\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-18T12:26:57.869Z",
+              "WhenOpened": "2024-08-19T09:11:38.794Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Program.cs",
-              "DocumentMoniker": "F:\\\u0622\u0645\u0648\u0632\u0634\\Scable Book Store-project3\\BookList_Rabbit\\RestApi\\RabbitSender\\Program.cs",
-              "RelativeDocumentMoniker": "RabbitSender\\Program.cs",
-              "ToolTip": "F:\\\u0622\u0645\u0648\u0632\u0634\\Scable Book Store-project3\\BookList_Rabbit\\RestApi\\RabbitSender\\Program.cs",
-              "RelativeToolTip": "RabbitSender\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAUAAAA",
+              "DocumentIndex": 0,
+              "Title": "BookStoreDbContext.cs",
+              "DocumentMoniker": "F:\\\u0622\u0645\u0648\u0632\u0634\\Scable Book Store-project3\\BookList_Rabbit\\BookStore_Scable\\Reciever1\\BookStoreDbContext.cs",
+              "RelativeDocumentMoniker": "Reciever1\\BookStoreDbContext.cs",
+              "ToolTip": "F:\\\u0622\u0645\u0648\u0632\u0634\\Scable Book Store-project3\\BookList_Rabbit\\BookStore_Scable\\Reciever1\\BookStoreDbContext.cs",
+              "RelativeToolTip": "Reciever1\\BookStoreDbContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAASAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-18T12:21:54.922Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "appsetting.json",
-              "DocumentMoniker": "F:\\\u0622\u0645\u0648\u0632\u0634\\Scable Book Store-project3\\BookList_Rabbit\\RestApi\\RabbitSender\\appsetting.json",
-              "RelativeDocumentMoniker": "RabbitSender\\appsetting.json",
-              "ToolTip": "F:\\\u0622\u0645\u0648\u0632\u0634\\Scable Book Store-project3\\BookList_Rabbit\\RestApi\\RabbitSender\\appsetting.json",
-              "RelativeToolTip": "RabbitSender\\appsetting.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-08-18T12:18:42.001Z"
+              "WhenOpened": "2024-08-19T09:11:32.846Z",
+              "EditorCaption": ""
             }
           ]
         }
