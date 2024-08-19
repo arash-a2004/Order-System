@@ -1,5 +1,0 @@
-{
-  "ConnectionStrings": {
-    "BookDatabase": "Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=BookManagement;Integrated Security=True;"
-  }
-}
