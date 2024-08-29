@@ -4,7 +4,10 @@ using Microsoft.AspNetCore.SignalR.Protocol;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using RestApiServices.Models;
+using RestApiServices.Services;
 using System.Net;
+using System.Text.Json;
+using System.Text.Json.Serialization;
 
 namespace RestApiServices.Controllers
 {
@@ -48,9 +51,9 @@ namespace RestApiServices.Controllers
                 var result = query.Include(u => u.Authors).Skip(Skip).Take(Max).ToList();
 
                 var res = new List<BookDto>();
-                var list2 = new List<string>(); 
+                var list2 = new List<string>();
 
-                foreach (var item in result) 
+                foreach (var item in result)
                 {
                     list2.Clear();
                     list2.AddRange(item.Authors.Select(e => e.Name));
@@ -60,7 +63,7 @@ namespace RestApiServices.Controllers
                                 Title = item.Title,
                                 Authors = list2
                             }
-                            
+
                         );
                 }
 
@@ -74,7 +77,8 @@ namespace RestApiServices.Controllers
         }
 
 
-        [HttpGet("[action]")]
+        [HttpGet]
+        [Route("User/GetAllUsers")]
         public ActionResult<IEnumerable<object>> GetUsers([FromBody] Models.FromBody.GetAllUserApiBody body)
         {
             try
@@ -86,7 +90,7 @@ namespace RestApiServices.Controllers
                 return Ok(userList);
             }
 
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 Console.WriteLine(ex.Message.ToString());
                 return BadRequest("BAD Request");
@@ -94,8 +98,9 @@ namespace RestApiServices.Controllers
         }
 
 
-        [HttpGet("[action]")]
-        public async Task<ActionResult<User>> GetUserById([FromQuery]int id)
+        [HttpGet]
+        [Route("User/GetUserById")]
+        public async Task<ActionResult<User>> GetUserById([FromQuery] int id)
         {
             try
             {
@@ -103,7 +108,7 @@ namespace RestApiServices.Controllers
 
                 var SUser = await user.GetUserById(id);
 
-                if(SUser != null)
+                if (SUser != null)
                 {
                     return Ok(SUser);
                 }
@@ -111,11 +116,88 @@ namespace RestApiServices.Controllers
                 return NotFound("Not Found");
             }
 
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 Console.WriteLine(ex.Message.ToString());
                 return BadRequest(ex.Message.ToString());
             }
         }
+
+        [HttpPost]
+        [Route("User/AddBoodToCartByUserId")]
+        public async Task<ActionResult> AddBoodToCartByUserId([FromHeader] int userId, [FromBody] BookDto book)
+        {
+            //TODO : check if book is repetitive or not ? 
+
+            try
+            {
+                BookStoreDbContext db = new();
+
+                var user = db.Users.Include(e => e.Cart).Where(e => e.Id == userId).FirstOrDefault();
+
+                if (user == null)
+                {
+                    return NotFound("User Not Found");
+                }
+
+                var bookSelected = db.Books
+                   .Include(e => e.Authors)
+                   .Include(e => e.Carts)
+                   .Where(e => e.Title == book.Title)
+                   .Distinct()
+                   .FirstOrDefault();
+
+                if (bookSelected == null)
+                {
+                    return NotFound("Book Not Found");
+                }
+
+                bool flag = false;
+                foreach (var item in book.Authors)
+                {
+                    foreach (var item2 in bookSelected.Authors)
+                    {
+                        if (item2.Name == item)
+                        {
+                            flag = true;
+                            break;
+                        }
+                    }
+                    if (flag)
+                    {
+                        break;
+                    }
+                }
+
+                if (!flag)
+                {
+                    return NotFound("There are no books with this specification");
+                }
+
+                Cart cart = new Cart()
+                {
+                    User = user,
+                    UserId = userId,
+                };
+                if(cart.Books == null)
+                {
+                    cart.Books = new List<Book>();
+                }
+                cart.Books.Add(bookSelected);
+
+                string jsonString = JsonSerializer.Serialize(cart);
+
+                AddCartToRabbitQueue.AddCartToQueue(jsonString);
+
+                return Ok(cart);
+            }
+
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+
+        }
+
     }
 }
