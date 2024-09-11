@@ -3,36 +3,32 @@
   "WorkspaceRootPath": "F:\\\u0622\u0645\u0648\u0632\u0634\\Scable Book Store-project3\\BookList_Rabbit\\BookStore_Scable\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3147054A-81BA-4140-90D8-35278BE00F9E}|RestApiServices\\RestApiServices.csproj|f:\\\u0622\u0645\u0648\u0632\u0634\\scable book store-project3\\booklist_rabbit\\bookstore_scable\\restapiservices\\controllers\\apigateway.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3147054A-81BA-4140-90D8-35278BE00F9E}|RestApiServices\\RestApiServices.csproj|solutionrelative:restapiservices\\controllers\\apigateway.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{01784A16-8070-4799-90B5-5F0F0CA392C9}|LibraryDemo\\LibraryDemo.csproj|f:\\\u0622\u0645\u0648\u0632\u0634\\scable book store-project3\\booklist_rabbit\\bookstore_scable\\librarydemo\\dbcontext\\dbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{01784A16-8070-4799-90B5-5F0F0CA392C9}|LibraryDemo\\LibraryDemo.csproj|solutionrelative:librarydemo\\dbcontext\\dbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3147054A-81BA-4140-90D8-35278BE00F9E}|RestApiServices\\RestApiServices.csproj|f:\\\u0622\u0645\u0648\u0632\u0634\\scable book store-project3\\booklist_rabbit\\bookstore_scable\\restapiservices\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3147054A-81BA-4140-90D8-35278BE00F9E}|RestApiServices\\RestApiServices.csproj|solutionrelative:restapiservices\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3147054A-81BA-4140-90D8-35278BE00F9E}|RestApiServices\\RestApiServices.csproj|f:\\\u0622\u0645\u0648\u0632\u0634\\scable book store-project3\\booklist_rabbit\\bookstore_scable\\restapiservices\\bookstoredbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3147054A-81BA-4140-90D8-35278BE00F9E}|RestApiServices\\RestApiServices.csproj|solutionrelative:restapiservices\\bookstoredbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3147054A-81BA-4140-90D8-35278BE00F9E}|RestApiServices\\RestApiServices.csproj|f:\\\u0622\u0645\u0648\u0632\u0634\\scable book store-project3\\booklist_rabbit\\bookstore_scable\\restapiservices\\services\\addcarttorabbitqueue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3147054A-81BA-4140-90D8-35278BE00F9E}|RestApiServices\\RestApiServices.csproj|solutionrelative:restapiservices\\services\\addcarttorabbitqueue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{01784A16-8070-4799-90B5-5F0F0CA392C9}|LibraryDemo\\LibraryDemo.csproj|f:\\\u0622\u0645\u0648\u0632\u0634\\scable book store-project3\\booklist_rabbit\\bookstore_scable\\librarydemo\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{01784A16-8070-4799-90B5-5F0F0CA392C9}|LibraryDemo\\LibraryDemo.csproj|solutionrelative:librarydemo\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3147054A-81BA-4140-90D8-35278BE00F9E}|RestApiServices\\RestApiServices.csproj|f:\\\u0622\u0645\u0648\u0632\u0634\\scable book store-project3\\booklist_rabbit\\bookstore_scable\\restapiservices\\models\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3147054A-81BA-4140-90D8-35278BE00F9E}|RestApiServices\\RestApiServices.csproj|solutionrelative:restapiservices\\models\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{01784A16-8070-4799-90B5-5F0F0CA392C9}|LibraryDemo\\LibraryDemo.csproj|f:\\\u0622\u0645\u0648\u0632\u0634\\scable book store-project3\\booklist_rabbit\\bookstore_scable\\librarydemo\\defineconnection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{01784A16-8070-4799-90B5-5F0F0CA392C9}|LibraryDemo\\LibraryDemo.csproj|solutionrelative:librarydemo\\defineconnection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3147054A-81BA-4140-90D8-35278BE00F9E}|RestApiServices\\RestApiServices.csproj|f:\\\u0622\u0645\u0648\u0632\u0634\\scable book store-project3\\booklist_rabbit\\bookstore_scable\\restapiservices\\models\\cart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3147054A-81BA-4140-90D8-35278BE00F9E}|RestApiServices\\RestApiServices.csproj|solutionrelative:restapiservices\\models\\cart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FD9F9A9E-83F9-4D58-9F73-AFC1C6C8D448}|docker-compose.dcproj|f:\\\u0622\u0645\u0648\u0632\u0634\\scable book store-project3\\booklist_rabbit\\bookstore_scable\\docker-compose.yml||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{FD9F9A9E-83F9-4D58-9F73-AFC1C6C8D448}|docker-compose.dcproj|solutionrelative:docker-compose.yml||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3147054A-81BA-4140-90D8-35278BE00F9E}|RestApiServices\\RestApiServices.csproj|f:\\\u0622\u0645\u0648\u0632\u0634\\scable book store-project3\\booklist_rabbit\\bookstore_scable\\restapiservices\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3147054A-81BA-4140-90D8-35278BE00F9E}|RestApiServices\\RestApiServices.csproj|solutionrelative:restapiservices\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{01784A16-8070-4799-90B5-5F0F0CA392C9}|LibraryDemo\\LibraryDemo.csproj|f:\\\u0622\u0645\u0648\u0632\u0634\\scable book store-project3\\booklist_rabbit\\bookstore_scable\\librarydemo\\appsetting.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{01784A16-8070-4799-90B5-5F0F0CA392C9}|LibraryDemo\\LibraryDemo.csproj|solutionrelative:librarydemo\\appsetting.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3147054A-81BA-4140-90D8-35278BE00F9E}|RestApiServices\\RestApiServices.csproj|f:\\\u0622\u0645\u0648\u0632\u0634\\scable book store-project3\\booklist_rabbit\\bookstore_scable\\restapiservices\\fakedata\\datagenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3147054A-81BA-4140-90D8-35278BE00F9E}|RestApiServices\\RestApiServices.csproj|solutionrelative:restapiservices\\fakedata\\datagenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3147054A-81BA-4140-90D8-35278BE00F9E}|RestApiServices\\RestApiServices.csproj|f:\\\u0622\u0645\u0648\u0632\u0634\\scable book store-project3\\booklist_rabbit\\bookstore_scable\\restapiservices\\fakedata\\booktitles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3147054A-81BA-4140-90D8-35278BE00F9E}|RestApiServices\\RestApiServices.csproj|solutionrelative:restapiservices\\fakedata\\booktitles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3147054A-81BA-4140-90D8-35278BE00F9E}|RestApiServices\\RestApiServices.csproj|f:\\\u0622\u0645\u0648\u0632\u0634\\scable book store-project3\\booklist_rabbit\\bookstore_scable\\restapiservices\\services\\getalluser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3147054A-81BA-4140-90D8-35278BE00F9E}|RestApiServices\\RestApiServices.csproj|solutionrelative:restapiservices\\services\\getalluser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,7 +38,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 10,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -58,101 +54,93 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Program.cs",
-              "DocumentMoniker": "F:\\\u0622\u0645\u0648\u0632\u0634\\Scable Book Store-project3\\BookList_Rabbit\\BookStore_Scable\\RestApiServices\\Program.cs",
-              "RelativeDocumentMoniker": "RestApiServices\\Program.cs",
-              "ToolTip": "F:\\\u0622\u0645\u0648\u0632\u0634\\Scable Book Store-project3\\BookList_Rabbit\\BookStore_Scable\\RestApiServices\\Program.cs",
-              "RelativeToolTip": "RestApiServices\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAaAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "DbContext.cs",
+              "DocumentMoniker": "F:\\\u0622\u0645\u0648\u0632\u0634\\Scable Book Store-project3\\BookList_Rabbit\\BookStore_Scable\\LibraryDemo\\DBContext\\DbContext.cs",
+              "RelativeDocumentMoniker": "LibraryDemo\\DBContext\\DbContext.cs",
+              "ToolTip": "F:\\\u0622\u0645\u0648\u0632\u0634\\Scable Book Store-project3\\BookList_Rabbit\\BookStore_Scable\\LibraryDemo\\DBContext\\DbContext.cs",
+              "RelativeToolTip": "LibraryDemo\\DBContext\\DbContext.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABkAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-31T11:54:29.031Z",
+              "WhenOpened": "2024-09-11T11:33:53.276Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "BookTitles.cs",
-              "DocumentMoniker": "F:\\\u0622\u0645\u0648\u0632\u0634\\Scable Book Store-project3\\BookList_Rabbit\\BookStore_Scable\\RestApiServices\\FakeData\\BookTitles.cs",
-              "RelativeDocumentMoniker": "RestApiServices\\FakeData\\BookTitles.cs",
-              "ToolTip": "F:\\\u0622\u0645\u0648\u0632\u0634\\Scable Book Store-project3\\BookList_Rabbit\\BookStore_Scable\\RestApiServices\\FakeData\\BookTitles.cs",
-              "RelativeToolTip": "RestApiServices\\FakeData\\BookTitles.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-27T07:26:01.287Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "Book.cs",
-              "DocumentMoniker": "F:\\\u0622\u0645\u0648\u0632\u0634\\Scable Book Store-project3\\BookList_Rabbit\\BookStore_Scable\\RestApiServices\\Models\\Book.cs",
-              "RelativeDocumentMoniker": "RestApiServices\\Models\\Book.cs",
-              "ToolTip": "F:\\\u0622\u0645\u0648\u0632\u0634\\Scable Book Store-project3\\BookList_Rabbit\\BookStore_Scable\\RestApiServices\\Models\\Book.cs",
-              "RelativeToolTip": "RestApiServices\\Models\\Book.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAUAAAAAAAAAA==",
+              "Title": "DefineConnection.cs",
+              "DocumentMoniker": "F:\\\u0622\u0645\u0648\u0632\u0634\\Scable Book Store-project3\\BookList_Rabbit\\BookStore_Scable\\LibraryDemo\\DefineConnection.cs",
+              "RelativeDocumentMoniker": "LibraryDemo\\DefineConnection.cs",
+              "ToolTip": "F:\\\u0622\u0645\u0648\u0632\u0634\\Scable Book Store-project3\\BookList_Rabbit\\BookStore_Scable\\LibraryDemo\\DefineConnection.cs",
+              "RelativeToolTip": "LibraryDemo\\DefineConnection.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-27T07:12:07.386Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "DataGenerator.cs",
-              "DocumentMoniker": "F:\\\u0622\u0645\u0648\u0632\u0634\\Scable Book Store-project3\\BookList_Rabbit\\BookStore_Scable\\RestApiServices\\FakeData\\DataGenerator.cs",
-              "RelativeDocumentMoniker": "RestApiServices\\FakeData\\DataGenerator.cs",
-              "ToolTip": "F:\\\u0622\u0645\u0648\u0632\u0634\\Scable Book Store-project3\\BookList_Rabbit\\BookStore_Scable\\RestApiServices\\FakeData\\DataGenerator.cs",
-              "RelativeToolTip": "RestApiServices\\FakeData\\DataGenerator.cs",
-              "ViewState": "AQIAACsAAAAAAAAAAAAkwB8AAAAQAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-26T12:51:15.512Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Cart.cs",
-              "DocumentMoniker": "F:\\\u0622\u0645\u0648\u0632\u0634\\Scable Book Store-project3\\BookList_Rabbit\\BookStore_Scable\\RestApiServices\\Models\\Cart.cs",
-              "RelativeDocumentMoniker": "RestApiServices\\Models\\Cart.cs",
-              "ToolTip": "F:\\\u0622\u0645\u0648\u0632\u0634\\Scable Book Store-project3\\BookList_Rabbit\\BookStore_Scable\\RestApiServices\\Models\\Cart.cs",
-              "RelativeToolTip": "RestApiServices\\Models\\Cart.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAcAAAAYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-26T12:49:38.905Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "AddCartToRabbitQueue.cs",
-              "DocumentMoniker": "F:\\\u0622\u0645\u0648\u0632\u0634\\Scable Book Store-project3\\BookList_Rabbit\\BookStore_Scable\\RestApiServices\\Services\\AddCartToRabbitQueue.cs",
-              "RelativeDocumentMoniker": "RestApiServices\\Services\\AddCartToRabbitQueue.cs",
-              "ToolTip": "F:\\\u0622\u0645\u0648\u0632\u0634\\Scable Book Store-project3\\BookList_Rabbit\\BookStore_Scable\\RestApiServices\\Services\\AddCartToRabbitQueue.cs",
-              "RelativeToolTip": "RestApiServices\\Services\\AddCartToRabbitQueue.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAAcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-25T13:54:24.481Z",
+              "WhenOpened": "2024-09-11T11:17:02.287Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "User.cs",
-              "DocumentMoniker": "F:\\\u0622\u0645\u0648\u0632\u0634\\Scable Book Store-project3\\BookList_Rabbit\\BookStore_Scable\\RestApiServices\\Models\\User.cs",
-              "RelativeDocumentMoniker": "RestApiServices\\Models\\User.cs",
-              "ToolTip": "F:\\\u0622\u0645\u0648\u0632\u0634\\Scable Book Store-project3\\BookList_Rabbit\\BookStore_Scable\\RestApiServices\\Models\\User.cs",
-              "RelativeToolTip": "RestApiServices\\Models\\User.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-21T22:10:34.263Z"
+              "Title": "appsetting.json",
+              "DocumentMoniker": "F:\\\u0622\u0645\u0648\u0632\u0634\\Scable Book Store-project3\\BookList_Rabbit\\BookStore_Scable\\LibraryDemo\\appsetting.json",
+              "RelativeDocumentMoniker": "LibraryDemo\\appsetting.json",
+              "ToolTip": "F:\\\u0622\u0645\u0648\u0632\u0634\\Scable Book Store-project3\\BookList_Rabbit\\BookStore_Scable\\LibraryDemo\\appsetting.json",
+              "RelativeToolTip": "LibraryDemo\\appsetting.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-09-11T11:13:10.164Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "APiGateway.cs",
-              "DocumentMoniker": "F:\\\u0622\u0645\u0648\u0632\u0634\\Scable Book Store-project3\\BookList_Rabbit\\BookStore_Scable\\RestApiServices\\Controllers\\APiGateway.cs",
-              "RelativeDocumentMoniker": "RestApiServices\\Controllers\\APiGateway.cs",
-              "ToolTip": "F:\\\u0622\u0645\u0648\u0632\u0634\\Scable Book Store-project3\\BookList_Rabbit\\BookStore_Scable\\RestApiServices\\Controllers\\APiGateway.cs",
-              "RelativeToolTip": "RestApiServices\\Controllers\\APiGateway.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAALAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "BookStoreDbContext.cs",
+              "DocumentMoniker": "F:\\\u0622\u0645\u0648\u0632\u0634\\Scable Book Store-project3\\BookList_Rabbit\\BookStore_Scable\\RestApiServices\\BookStoreDbContext.cs",
+              "RelativeDocumentMoniker": "RestApiServices\\BookStoreDbContext.cs",
+              "ToolTip": "F:\\\u0622\u0645\u0648\u0632\u0634\\Scable Book Store-project3\\BookList_Rabbit\\BookStore_Scable\\RestApiServices\\BookStoreDbContext.cs",
+              "RelativeToolTip": "RestApiServices\\BookStoreDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAABKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-21T22:07:42.951Z",
+              "WhenOpened": "2024-09-11T11:10:47.516Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "docker-compose.yml",
+              "DocumentMoniker": "F:\\\u0622\u0645\u0648\u0632\u0634\\Scable Book Store-project3\\BookList_Rabbit\\BookStore_Scable\\docker-compose.yml",
+              "RelativeDocumentMoniker": "docker-compose.yml",
+              "ToolTip": "F:\\\u0622\u0645\u0648\u0632\u0634\\Scable Book Store-project3\\BookList_Rabbit\\BookStore_Scable\\docker-compose.yml",
+              "RelativeToolTip": "docker-compose.yml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003775|",
+              "WhenOpened": "2024-09-11T06:56:57.964Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "F:\\\u0622\u0645\u0648\u0632\u0634\\Scable Book Store-project3\\BookList_Rabbit\\BookStore_Scable\\LibraryDemo\\Program.cs",
+              "RelativeDocumentMoniker": "LibraryDemo\\Program.cs",
+              "ToolTip": "F:\\\u0622\u0645\u0648\u0632\u0634\\Scable Book Store-project3\\BookList_Rabbit\\BookStore_Scable\\LibraryDemo\\Program.cs",
+              "RelativeToolTip": "LibraryDemo\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-11T06:54:44.917Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "GetAllUser.cs",
+              "DocumentMoniker": "F:\\\u0622\u0645\u0648\u0632\u0634\\Scable Book Store-project3\\BookList_Rabbit\\BookStore_Scable\\RestApiServices\\Services\\GetAllUser.cs",
+              "RelativeDocumentMoniker": "RestApiServices\\Services\\GetAllUser.cs",
+              "ToolTip": "F:\\\u0622\u0645\u0648\u0632\u0634\\Scable Book Store-project3\\BookList_Rabbit\\BookStore_Scable\\RestApiServices\\Services\\GetAllUser.cs",
+              "RelativeToolTip": "RestApiServices\\Services\\GetAllUser.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-11T06:44:09.317Z",
               "EditorCaption": ""
             }
           ]
