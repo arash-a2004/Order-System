@@ -1,0 +1,36 @@
+name: dockercompose10349612245910214354
+services:
+  datab:
+    container_name: customer-db
+    environment:
+      ACCEPT_EULA: "Y"
+      MSSQL_SA_PASSWORD: XyZ$$2024!Pass
+    image: mcr.microsoft.com/mssql/server:latest
+    networks:
+      backend: null
+    ports:
+      - mode: ingress
+        target: 1433
+        published: "8001"
+        protocol: tcp
+    restart: unless-stopped
+  librarydemo:
+    build:
+      context: F:\آموزش\Scable Book Store-project3\BookList_Rabbit\BookStore_Scable
+      dockerfile: LibraryDemo/Dockerfile
+    container_name: customer-api
+    environment:
+      DB_HOST: datab
+      DB_NAME: customer
+      DB_SA_PASSWORD: XyZ$$2024!Pass
+    image: librarydemo
+    networks:
+      backend: null
+    ports:
+      - mode: ingress
+        target: 80
+        published: "8002"
+        protocol: tcp
+networks:
+  backend:
+    name: dockercompose10349612245910214354_backend

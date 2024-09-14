@@ -5,6 +5,7 @@ namespace RestApiServices
 {
     public class BookStoreDbContext : DbContext
     {
+        //Pass : XyZ$2024!Pass
         public DbSet<User> Users { get; set; }
         public DbSet<Author> Authors { get; set; }
         public DbSet<Cart> Carts { get; set; }
