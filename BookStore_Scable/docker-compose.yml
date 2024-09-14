@@ -27,3 +27,12 @@ services:
       - DB_HOST=datab
       - DB_NAME=customer 
       - DB_SA_PASSWORD=XyZ$2024!Pass
+  rabbitMqDemo:
+    container_name: rabbit-rm
+    image: rabbitmq:3-management
+    networks:
+      - backend
+    ports:
+      - 5672:5672
+      - 15672:15672
+    restart: unless-stopped

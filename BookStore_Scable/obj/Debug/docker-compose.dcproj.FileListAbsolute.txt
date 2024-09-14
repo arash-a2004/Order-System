@@ -27,3 +27,6 @@ F:\آموزش\Scable Book Store-project3\BookList_Rabbit\BookStore_Scable\bin\De
 F:\آموزش\Scable Book Store-project3\BookList_Rabbit\BookStore_Scable\bin\Debug\Microsoft.Extensions.FileProviders.Physical.dll
 F:\آموزش\Scable Book Store-project3\BookList_Rabbit\BookStore_Scable\bin\Debug\Microsoft.Identity.Client.dll
 F:\آموزش\Scable Book Store-project3\BookList_Rabbit\BookStore_Scable\bin\Debug\Microsoft.Extensions.FileSystemGlobbing.dll
+F:\آموزش\Scable Book Store-project3\BookList_Rabbit\BookStore_Scable\bin\Debug\MediatR.dll
+F:\آموزش\Scable Book Store-project3\BookList_Rabbit\BookStore_Scable\bin\Debug\MediatR.Contracts.dll
+F:\آموزش\Scable Book Store-project3\BookList_Rabbit\BookStore_Scable\bin\Debug\RabbitMQ.Client.dll

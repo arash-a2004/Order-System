@@ -18,7 +18,7 @@ namespace LibraryDemo.DBContext
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            IConfigurationBuilder configurationBuilder = new ConfigurationBuilder().AddJsonFile("appsetting.json");
+            IConfigurationBuilder configurationBuilder = new ConfigurationBuilder().AddJsonFile("appsetting1.json");
             IConfiguration configuration = configurationBuilder.Build();
             optionsBuilder.UseSqlServer(configuration.GetConnectionString("BookStoreDb"));
         }

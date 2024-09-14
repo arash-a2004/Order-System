@@ -1,9 +1,12 @@
 ﻿using LibraryDemo;
 using LibraryDemo.DataAccess;
-using LibraryDemo.Handlers;
+using LibraryDemo.DBContext;
+using LibraryDemo.Handlers.GetAllBooks;
 using LibraryDemo.Models;
 using LibraryDemo.Queries.GetAllBooks;
+using LibraryDemo.Queries.GetAllUser;
 using MediatR;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using System.Text.Json;
@@ -32,6 +35,10 @@ class Program
             {
                 options.RegisterServicesFromAssemblies(typeof(GetAllBooksHandler).Assembly);
             });
+        services.AddMediatR(options =>
+            {
+                options.RegisterServicesFromAssemblies(typeof(GetAllUserQuery).Assembly);
+            });
 
 
         // 3. Build service provider
@@ -39,32 +46,31 @@ class Program
 
         // 4. Resolve and use the IMediator service
         var mediator = serviceProvider.GetService<IMediator>();
-
-        var a = mediator.Send(new GetAllBooksQuery(new ApiBook()));
+        var a = mediator.Send(new GetAllUserQuery(new LibraryDemo.Models.FromBody.GetAllUserApiBody { }));
         String JSON = JsonSerializer.Serialize(a);
         Console.WriteLine(JSON);
         Console.ReadLine();
 
     }
 }
-    //static void Main(string[] args)
-    //{
-    //    // Set up DI
-    //    var serviceCollection = new ServiceCollection();
-    //    ConfigureServices(serviceCollection);
+//static void Main(string[] args)
+//{
+//    // Set up DI
+//    var serviceCollection = new ServiceCollection();
+//    ConfigureServices(serviceCollection);
 
-    //    var serviceProvider = serviceCollection.BuildServiceProvider();
+//    var serviceProvider = serviceCollection.BuildServiceProvider();
 
 
-    //}
+//}
 
-    //private static void ConfigureServices(IServiceCollection services)
-    //{
-    //    // Register services here
-    //    services.AddSingleton<IDemoDataAccess, DemoDataAccess>();
-    //    services.AddMediatR(options =>
-    //    {
-    //        options.RegisterServicesFromAssemblies(typeof(Program).Assembly);
-    //    });
+//private static void ConfigureServices(IServiceCollection services)
+//{
+//    // Register services here
+//    services.AddSingleton<IDemoDataAccess, DemoDataAccess>();
+//    services.AddMediatR(options =>
+//    {
+//        options.RegisterServicesFromAssemblies(typeof(Program).Assembly);
+//    });
 
 
