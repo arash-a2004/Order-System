@@ -46,9 +46,49 @@ class Program
 
         // 4. Resolve and use the IMediator service
         var mediator = serviceProvider.GetService<IMediator>();
-        var a = mediator.Send(new GetAllUserQuery(new LibraryDemo.Models.FromBody.GetAllUserApiBody { }));
-        String JSON = JsonSerializer.Serialize(a);
-        Console.WriteLine(JSON);
+
+        Cart cart = new()
+        {
+            Id = 1,
+            User = new User() { Name = "User" },
+            UserId = 1,
+        };
+        string json = JsonSerializer.Serialize(cart);
+        DemoDataAccess demoData = new();
+        demoData.AddCartToQueue(json);
+
+        //List<Author> authorList = new List<Author>();   
+        //Author author = new Author()
+        //{
+        //    Name = "Author_Test1"
+        //};
+        //authorList.Add(author);
+        //BooksStoreDbContext dbContext = new BooksStoreDbContext();
+        ////dbContext.Authors.Add(author);
+        ////dbContext.SaveChanges();
+
+        //var user = dbContext.Users.FirstOrDefault();
+
+        //List<Book> books = new List<Book>();
+        //var BookSample = new Book()
+        //{
+        //    Title = "Test",
+        //    Authors = authorList
+        //};
+        //books.Add(BookSample);
+
+        //var a = new Cart
+        //{
+        //    User = user,
+        //    UserId = user.Id,
+        //    Books = books
+        //};
+        //dbContext.Carts.Add(a);
+        //dbContext.SaveChanges();
+
+        //var aada = mediator.Send(new GetAllUserQuery(new LibraryDemo.Models.FromBody.GetAllUserApiBody { }));
+        //String JSON = JsonSerializer.Serialize(a);
+        //Console.WriteLine(JSON);
         Console.ReadLine();
 
     }

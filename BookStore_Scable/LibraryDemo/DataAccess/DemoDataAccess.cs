@@ -123,6 +123,7 @@ namespace LibraryDemo.DataAccess
                 User = user,
                 UserId = userId,
             };
+
             if (cart.Books == null)
             {
                 cart.Books = new List<Book>();
