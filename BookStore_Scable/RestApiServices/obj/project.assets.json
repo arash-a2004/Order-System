@@ -732,7 +732,8 @@
       "Microsoft.VisualStudio.Azure.Containers.Tools.Targets/1.21.0": {
         "type": "package",
         "build": {
-          "build/_._": {}
+          "build/Microsoft.VisualStudio.Azure.Containers.Tools.Targets.props": {},
+          "build/Microsoft.VisualStudio.Azure.Containers.Tools.Targets.targets": {}
         }
       },
       "Microsoft.Win32.SystemEvents/6.0.0": {
@@ -3814,6 +3815,7 @@
       "Microsoft.Extensions.Configuration.FileExtensions >= 8.0.1",
       "Microsoft.Extensions.Configuration.Json >= 8.0.0",
       "Microsoft.Extensions.DependencyInjection >= 8.0.0",
+      "Microsoft.VisualStudio.Azure.Containers.Tools.Targets >= 1.21.0",
       "RabbitMQ.Client >= 6.8.1",
       "Swashbuckle.AspNetCore >= 6.4.0"
     ]
@@ -3895,6 +3897,10 @@
           "Microsoft.Extensions.DependencyInjection": {
             "target": "Package",
             "version": "[8.0.0, )"
+          },
+          "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": {
+            "target": "Package",
+            "version": "[1.21.0, )"
           },
           "RabbitMQ.Client": {
             "target": "Package",
