@@ -3,28 +3,15 @@
   "WorkspaceRootPath": "F:\\\u0622\u0645\u0648\u0632\u0634\\Scable Book Store-project3\\BookList_Rabbit\\BookStore_Scable\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{410D5B9B-7021-402D-97FF-A308E9405E2A}|..\\RabbitMqReceiver1\\RabbitMqReceiver1.csproj|f:\\\u0622\u0645\u0648\u0632\u0634\\scable book store-project3\\booklist_rabbit\\rabbitmqreceiver1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{01784A16-8070-4799-90B5-5F0F0CA392C9}|LibraryDemo\\LibraryDemo.csproj|f:\\\u0622\u0645\u0648\u0632\u0634\\scable book store-project3\\booklist_rabbit\\bookstore_scable\\librarydemo\\dataaccess\\demodataaccess.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{01784A16-8070-4799-90B5-5F0F0CA392C9}|LibraryDemo\\LibraryDemo.csproj|solutionrelative:librarydemo\\dataaccess\\demodataaccess.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{01784A16-8070-4799-90B5-5F0F0CA392C9}|LibraryDemo\\LibraryDemo.csproj|f:\\\u0622\u0645\u0648\u0632\u0634\\scable book store-project3\\booklist_rabbit\\bookstore_scable\\librarydemo\\handlers\\addcarttoqueue\\addcarttoqueuehandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{01784A16-8070-4799-90B5-5F0F0CA392C9}|LibraryDemo\\LibraryDemo.csproj|solutionrelative:librarydemo\\handlers\\addcarttoqueue\\addcarttoqueuehandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3147054A-81BA-4140-90D8-35278BE00F9E}|RestApiServices\\RestApiServices.csproj|f:\\\u0622\u0645\u0648\u0632\u0634\\scable book store-project3\\booklist_rabbit\\bookstore_scable\\restapiservices\\controllers\\apigateway.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3147054A-81BA-4140-90D8-35278BE00F9E}|RestApiServices\\RestApiServices.csproj|solutionrelative:restapiservices\\controllers\\apigateway.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3147054A-81BA-4140-90D8-35278BE00F9E}|RestApiServices\\RestApiServices.csproj|f:\\\u0622\u0645\u0648\u0632\u0634\\scable book store-project3\\booklist_rabbit\\bookstore_scable\\restapiservices\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3147054A-81BA-4140-90D8-35278BE00F9E}|RestApiServices\\RestApiServices.csproj|solutionrelative:restapiservices\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{01784A16-8070-4799-90B5-5F0F0CA392C9}|LibraryDemo\\LibraryDemo.csproj|f:\\\u0622\u0645\u0648\u0632\u0634\\scable book store-project3\\booklist_rabbit\\bookstore_scable\\librarydemo\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{01784A16-8070-4799-90B5-5F0F0CA392C9}|LibraryDemo\\LibraryDemo.csproj|solutionrelative:librarydemo\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{01784A16-8070-4799-90B5-5F0F0CA392C9}|LibraryDemo\\LibraryDemo.csproj|f:\\\u0622\u0645\u0648\u0632\u0634\\scable book store-project3\\booklist_rabbit\\bookstore_scable\\librarydemo\\models\\cart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{01784A16-8070-4799-90B5-5F0F0CA392C9}|LibraryDemo\\LibraryDemo.csproj|solutionrelative:librarydemo\\models\\cart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -50,80 +37,39 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
               "Title": "Program.cs",
               "DocumentMoniker": "F:\\\u0622\u0645\u0648\u0632\u0634\\Scable Book Store-project3\\BookList_Rabbit\\BookStore_Scable\\LibraryDemo\\Program.cs",
               "RelativeDocumentMoniker": "LibraryDemo\\Program.cs",
               "ToolTip": "F:\\\u0622\u0645\u0648\u0632\u0634\\Scable Book Store-project3\\BookList_Rabbit\\BookStore_Scable\\LibraryDemo\\Program.cs",
               "RelativeToolTip": "LibraryDemo\\Program.cs",
-              "ViewState": "AgIAAEAAAAAAAAAAAAAQwFsAAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAACUAAAAAAAAAAIAwwEQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-14T20:24:35.855Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-15T06:53:37.014Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Cart.cs",
-              "DocumentMoniker": "F:\\\u0622\u0645\u0648\u0632\u0634\\Scable Book Store-project3\\BookList_Rabbit\\BookStore_Scable\\LibraryDemo\\Models\\Cart.cs",
-              "RelativeDocumentMoniker": "LibraryDemo\\Models\\Cart.cs",
-              "ToolTip": "F:\\\u0622\u0645\u0648\u0632\u0634\\Scable Book Store-project3\\BookList_Rabbit\\BookStore_Scable\\LibraryDemo\\Models\\Cart.cs",
-              "RelativeToolTip": "LibraryDemo\\Models\\Cart.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAQAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-14T19:58:43.108Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "DemoDataAccess.cs",
               "DocumentMoniker": "F:\\\u0622\u0645\u0648\u0632\u0634\\Scable Book Store-project3\\BookList_Rabbit\\BookStore_Scable\\LibraryDemo\\DataAccess\\DemoDataAccess.cs",
               "RelativeDocumentMoniker": "LibraryDemo\\DataAccess\\DemoDataAccess.cs",
               "ToolTip": "F:\\\u0622\u0645\u0648\u0632\u0634\\Scable Book Store-project3\\BookList_Rabbit\\BookStore_Scable\\LibraryDemo\\DataAccess\\DemoDataAccess.cs",
               "RelativeToolTip": "LibraryDemo\\DataAccess\\DemoDataAccess.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAAAEQAAABKAAAAAAAAAA==",
+              "ViewState": "AgIAABEAAAAAAAAAAAAAwDwAAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-14T19:42:17.363Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-14T20:51:16.694Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "AddCartToQueueHandler.cs",
-              "DocumentMoniker": "F:\\\u0622\u0645\u0648\u0632\u0634\\Scable Book Store-project3\\BookList_Rabbit\\BookStore_Scable\\LibraryDemo\\Handlers\\AddCartToQueue\\AddCartToQueueHandler.cs",
-              "RelativeDocumentMoniker": "LibraryDemo\\Handlers\\AddCartToQueue\\AddCartToQueueHandler.cs",
-              "ToolTip": "F:\\\u0622\u0645\u0648\u0632\u0634\\Scable Book Store-project3\\BookList_Rabbit\\BookStore_Scable\\LibraryDemo\\Handlers\\AddCartToQueue\\AddCartToQueueHandler.cs",
-              "RelativeToolTip": "LibraryDemo\\Handlers\\AddCartToQueue\\AddCartToQueueHandler.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAmAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-14T13:10:57.887Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "APiGateway.cs",
-              "DocumentMoniker": "F:\\\u0622\u0645\u0648\u0632\u0634\\Scable Book Store-project3\\BookList_Rabbit\\BookStore_Scable\\RestApiServices\\Controllers\\APiGateway.cs",
-              "RelativeDocumentMoniker": "RestApiServices\\Controllers\\APiGateway.cs",
-              "ToolTip": "F:\\\u0622\u0645\u0648\u0632\u0634\\Scable Book Store-project3\\BookList_Rabbit\\BookStore_Scable\\RestApiServices\\Controllers\\APiGateway.cs",
-              "RelativeToolTip": "RestApiServices\\Controllers\\APiGateway.cs",
-              "ViewState": "AgIAAC0AAAAAAAAAAAAYwGgAAABkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-14T09:57:25.656Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "Program.cs",
-              "DocumentMoniker": "F:\\\u0622\u0645\u0648\u0632\u0634\\Scable Book Store-project3\\BookList_Rabbit\\BookStore_Scable\\RestApiServices\\Program.cs",
-              "RelativeDocumentMoniker": "RestApiServices\\Program.cs",
-              "ToolTip": "F:\\\u0622\u0645\u0648\u0632\u0634\\Scable Book Store-project3\\BookList_Rabbit\\BookStore_Scable\\RestApiServices\\Program.cs",
-              "RelativeToolTip": "RestApiServices\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAABTAAAAAAAAAA==",
+              "DocumentMoniker": "F:\\\u0622\u0645\u0648\u0632\u0634\\Scable Book Store-project3\\BookList_Rabbit\\RabbitMqReceiver1\\Program.cs",
+              "RelativeDocumentMoniker": "..\\RabbitMqReceiver1\\Program.cs",
+              "ToolTip": "F:\\\u0622\u0645\u0648\u0632\u0634\\Scable Book Store-project3\\BookList_Rabbit\\RabbitMqReceiver1\\Program.cs",
+              "RelativeToolTip": "..\\RabbitMqReceiver1\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACMAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-14T09:57:06.05Z",
+              "WhenOpened": "2024-09-14T20:47:39.057Z",
               "EditorCaption": ""
             }
           ]
