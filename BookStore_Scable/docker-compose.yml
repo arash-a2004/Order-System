@@ -1,0 +1,38 @@
+networks:
+  backend:
+
+services:
+  datab:
+    container_name: customer-db 
+    image: mcr.microsoft.com/mssql/server:latest
+    environment:
+      - ACCEPT_EULA=Y
+      - MSSQL_SA_PASSWORD=XyZ$2024!Pass
+    networks: 
+      - backend
+    ports:
+      - 8001:1433
+    restart: unless-stopped
+  librarydemo:
+    container_name: customer-api
+    image: ${DOCKER_REGISTRY-}librarydemo
+    build:
+      context: .
+      dockerfile: LibraryDemo/Dockerfile
+    networks: 
+      - backend
+    ports:
+      - 8002:80 
+    environment:
+      - DB_HOST=datab
+      - DB_NAME=customer 
+      - DB_SA_PASSWORD=XyZ$2024!Pass
+  rabbitMqDemo:
+    container_name: rabbit-rm
+    image: rabbitmq:3-management
+    networks:
+      - backend
+    ports:
+      - 5672:5672
+      - 15672:15672
+    restart: unless-stopped

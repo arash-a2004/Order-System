@@ -1,10 +1,14 @@
 using Azure.Core;
+using LibraryDemo.Commands.AddCartToQueue;
+using LibraryDemo.Models;
+using LibraryDemo.Queries.GetAllBooks;
+using LibraryDemo.Queries.GetAllUser;
+using LibraryDemo.Queries.GetUserById;
+using MediatR;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.SignalR.Protocol;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
-using RestApiServices.Models;
-using RestApiServices.Services;
 using System.Net;
 using System.Text.Json;
 using System.Text.Json.Serialization;
@@ -15,79 +19,41 @@ namespace RestApiServices.Controllers
     [Route("[controller]")]
     public class APiGateway : ControllerBase
     {
+        private readonly IMediator _mediator;
+
+        public APiGateway(IMediator mediator)
+        {
+            _mediator = mediator;
+        }
+
         [HttpGet("[action]")]
-        public ActionResult<List<BookDto>> GetAll([FromBody] ApiBook? apiBook)
+        public ActionResult<List<BookDto>> GetAllBooks([FromBody] ApiBook apiBook)
         {
             try
             {
-                //bool flag = true;
-                BookStoreDbContext dbContext = new BookStoreDbContext();
-                var query = dbContext.Books.AsQueryable();
-
-                if (!string.IsNullOrEmpty(apiBook.Title))
-                    query = query.Where(e => e.Title == apiBook.Title);
-
-                //if (apiBook.BookAuthor != null)
-                //{
-                //    foreach(var author in apiBook.BookAuthor)
-                //    {
-                //        if (!string.IsNullOrEmpty(author))
-                //        {
-                //            flag = false;
-                //            query = query.Include(u => u.Authors).Where(u=>u.Authors.Any(o=>o.Name == author));
-                //        }
-                //    }
-                //}
-
-                int Skip = 0;
-                int Max = 10;
-
-                if (apiBook.SkipCount != null)
-                    Skip = apiBook.SkipCount.Value;
-
-                if (apiBook.MaxResult != null)
-                    Max = apiBook.MaxResult.Value;
-
-                var result = query.Include(u => u.Authors).Skip(Skip).Take(Max).ToList();
-
-                var res = new List<BookDto>();
-                var list2 = new List<string>();
-
-                foreach (var item in result)
-                {
-                    list2.Clear();
-                    list2.AddRange(item.Authors.Select(e => e.Name));
-                    res.Add(
-                            new BookDto()
-                            {
-                                Title = item.Title,
-                                Authors = list2
-                            }
-
-                        );
-                }
+                var res = _mediator.Send(new GetAllBooksQuery(apiBook)).Result;
 
                 return Ok(res);
-            }
-            catch
-            {
 
-                return BadRequest("BAD REquest");
             }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+
         }
+
 
 
         [HttpGet]
         [Route("User/GetAllUsers")]
-        public ActionResult<IEnumerable<object>> GetUsers([FromBody] Models.FromBody.GetAllUserApiBody body)
+        public ActionResult<IEnumerable<object>> GetUsers([FromBody] LibraryDemo.Models.FromBody.GetAllUserApiBody body)
         {
             try
             {
-                Services.GetAllUser users = new();
+                var res = _mediator.Send(new GetAllUserQuery(body));
 
-                var userList = users.GetAllUsers();
-
-                return Ok(userList);
+                return Ok(res);
             }
 
             catch (Exception ex)
@@ -104,13 +70,11 @@ namespace RestApiServices.Controllers
         {
             try
             {
-                Services.UserById user = new();
+                var user = await _mediator.Send(new GetUserByIdQuery(id));
 
-                var SUser = await user.GetUserById(id);
-
-                if (SUser != null)
+                if (user != null)
                 {
-                    return Ok(SUser);
+                    return Ok(user);
                 }
 
                 return NotFound("Not Found");
@@ -123,6 +87,7 @@ namespace RestApiServices.Controllers
             }
         }
 
+
         [HttpPost]
         [Route("User/AddBoodToCartByUserId")]
         public async Task<ActionResult> AddBoodToCartByUserId([FromHeader] int userId, [FromBody] BookDto book)
@@ -131,70 +96,22 @@ namespace RestApiServices.Controllers
 
             try
             {
-                BookStoreDbContext db = new();
+                var res = await _mediator.Send(new AddCartToQueueCommand(userId, book));
 
-                var user = db.Users.Include(e => e.Cart).Where(e => e.Id == userId).FirstOrDefault();
+                if (res == LibraryDemo.Models.enums.UserFoundState.NotFound)
+                    return NotFound("NotFound");
 
-                if (user == null)
-                {
-                    return NotFound("User Not Found");
-                }
+                else if (res == LibraryDemo.Models.enums.UserFoundState.NotFound_WithThisSpecification)
+                    return NotFound("User With This Specification Do Not recognized by the system");
 
-                var bookSelected = db.Books
-                   .Include(e => e.Authors)
-                   .Include(e => e.Carts)
-                   .Where(e => e.Title == book.Title)
-                   .Distinct()
-                   .FirstOrDefault();
+                else if (res == LibraryDemo.Models.enums.UserFoundState.Ok)
+                    return Ok();
 
-                if (bookSelected == null)
-                {
-                    return NotFound("Book Not Found");
-                }
-
-                bool flag = false;
-                foreach (var item in book.Authors)
-                {
-                    foreach (var item2 in bookSelected.Authors)
-                    {
-                        if (item2.Name == item)
-                        {
-                            flag = true;
-                            break;
-                        }
-                    }
-                    if (flag)
-                    {
-                        break;
-                    }
-                }
-
-                if (!flag)
-                {
-                    return NotFound("There are no books with this specification");
-                }
-
-                Cart cart = new Cart()
-                {
-                    User = user,
-                    UserId = userId,
-                };
-                if(cart.Books == null)
-                {
-                    cart.Books = new List<Book>();
-                }
-                cart.Books.Add(bookSelected);
-
-                string jsonString = JsonSerializer.Serialize(cart);
-
-                AddCartToRabbitQueue.AddCartToQueue(jsonString);
-
-                return Ok(cart);
+                else return BadRequest("A Bad Request Catch By System");
             }
-
             catch (Exception ex)
             {
-                return BadRequest(ex.Message);
+                return BadRequest(ex.Message.ToString());
             }
 
         }

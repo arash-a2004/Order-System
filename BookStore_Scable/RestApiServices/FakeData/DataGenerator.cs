@@ -4,8 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Bogus;
-using RestApiServices.Models;
-
+using LibraryDemo.Models;
 namespace RestApiServices.FakeData
 {
     public class DataGenerator
@@ -54,20 +53,20 @@ namespace RestApiServices.FakeData
             Console.WriteLine("Data Generated successfully");
 
 
-            SaveToDatabaseFakeData();
+            //SaveToDatabaseFakeData();
         }
 
-        private void SaveToDatabaseFakeData()
-        {
-            using(var context = new BookStoreDbContext())
-            {
-                context.Database.EnsureCreated();
-                context.Books.AddRange(Books);
-                context.Authors.AddRange(Authors);
-                context.Users.AddRange(Users);
-                context.SaveChanges();
-            }
-        }
+        //private void SaveToDatabaseFakeData()
+        //{
+        //    using(var context = new BookStoreDbContext())
+        //    {
+        //        context.Database.EnsureCreated();
+        //        context.Books.AddRange(Books);
+        //        context.Authors.AddRange(Authors);
+        //        context.Users.AddRange(Users);
+        //        context.SaveChanges();
+        //    }
+        //}
     }
 
 

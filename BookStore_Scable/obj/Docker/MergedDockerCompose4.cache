@@ -1,0 +1,96 @@
+name: dockercompose10349612245910214354
+services:
+  datab:
+    container_name: customer-db
+    environment:
+      ACCEPT_EULA: "Y"
+      MSSQL_SA_PASSWORD: password123
+    image: mcr.microsoft.com/mssql/server:latest
+    networks:
+      backend: null
+    ports:
+      - mode: ingress
+        target: 1433
+        published: "8001"
+        protocol: tcp
+    restart: unless-stopped
+  librarydemo:
+    build:
+      context: F:\آموزش\Scable Book Store-project3\BookList_Rabbit\BookStore_Scable
+      dockerfile: LibraryDemo/Dockerfile
+      args:
+        BUILD_CONFIGURATION: Debug
+        LAUNCHING_FROM_VS: "true"
+      labels:
+        com.microsoft.created-by: visual-studio
+        com.microsoft.visual-studio.project-name: LibraryDemo
+      target: base
+    container_name: LibraryDemo
+    entrypoint:
+      - dotnet
+      - --roll-forward
+      - Major
+      - /VSTools/DistrolessHelper/DistrolessHelper.dll
+      - --wait
+    environment:
+      DB_HOST: datab
+      DB_NAME: customer
+      DB_SA_PASSWORD: password123
+      NUGET_FALLBACK_PACKAGES: /.nuget/fallbackpackages
+    image: librarydemo:dev
+    labels:
+      com.microsoft.visualstudio.debuggee.arguments: ' --additionalProbingPath /.nuget/packages --additionalProbingPath /.nuget/fallbackpackages  "/app/bin/Debug/net8.0/LibraryDemo.dll"'
+      com.microsoft.visualstudio.debuggee.killprogram: dotnet --roll-forward Major /VSTools/DistrolessHelper/DistrolessHelper.dll --stop dotnet
+      com.microsoft.visualstudio.debuggee.program: dotnet
+      com.microsoft.visualstudio.debuggee.workingdirectory: /app
+    networks:
+      backend: null
+    ports:
+      - mode: ingress
+        target: 80
+        published: "8002"
+        protocol: tcp
+    tty: true
+    volumes:
+      - type: bind
+        source: F:\آموزش\Scable Book Store-project3\BookList_Rabbit\BookStore_Scable\LibraryDemo
+        target: /app
+        bind:
+          create_host_path: true
+      - type: bind
+        source: F:\آموزش\Scable Book Store-project3\BookList_Rabbit\BookStore_Scable
+        target: /src
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Users\AsusIran\vsdbg\vs2017u5
+        target: /remote_debugger
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Sdks\Microsoft.Docker.Sdk\tools\linux-x64\net8.0
+        target: /VSTools
+        read_only: true
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\HotReload
+        target: /HotReloadAgent
+        read_only: true
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Users\AsusIran\.nuget\packages
+        target: /.nuget/packages
+        read_only: true
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Program Files (x86)\Microsoft Visual Studio\Shared\NuGetPackages
+        target: /.nuget/fallbackpackages
+        read_only: true
+        bind:
+          create_host_path: true
+networks:
+  backend:
+    name: dockercompose10349612245910214354_backend

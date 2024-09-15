@@ -1,21 +1,21 @@
 [
   {
     "ContainingType": "RestApiServices.Controllers.APiGateway",
-    "Method": "GetAll",
-    "RelativePath": "APiGateway/GetAll",
+    "Method": "GetAllBooks",
+    "RelativePath": "APiGateway/GetAllBooks",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
         "Name": "apiBook",
-        "Type": "RestApiServices.Models.ApiBook",
-        "IsRequired": false
+        "Type": "LibraryDemo.Models.ApiBook",
+        "IsRequired": true
       }
     ],
     "ReturnTypes": [
       {
-        "Type": "System.Collections.Generic.List\u00601[[RestApiServices.Models.BookDto, RestApiServices, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "System.Collections.Generic.List\u00601[[LibraryDemo.Models.BookDto, LibraryDemo, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -40,7 +40,7 @@
       },
       {
         "Name": "book",
-        "Type": "RestApiServices.Models.BookDto",
+        "Type": "LibraryDemo.Models.BookDto",
         "IsRequired": true
       }
     ],
@@ -56,7 +56,7 @@
     "Parameters": [
       {
         "Name": "body",
-        "Type": "RestApiServices.Models.FromBody.GetAllUserApiBody",
+        "Type": "LibraryDemo.Models.FromBody.GetAllUserApiBody",
         "IsRequired": true
       }
     ],
@@ -88,7 +88,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "RestApiServices.Models.User",
+        "Type": "LibraryDemo.Models.User",
         "MediaTypes": [
           "text/plain",
           "application/json",

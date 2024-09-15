@@ -1,0 +1,5 @@
+{
+  "ConnectionStrings": {
+    "BookStoreDb": "Data Source=localhost,8001;Initial Catalog=book;User ID=sa;Password=XyZ$2024!Pass;Trust Server Certificate=True"
+  }
+}
