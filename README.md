@@ -44,7 +44,7 @@ This project is a bookstore order system where users can view available books th
 
 *Clone the repository**:
 	
-		git clone https://github.com/arash-a2004/BookList_Rabbit.git
+	git clone https://github.com/arash-a2004/BookList_Rabbit.git
   
 Run the API Gateway: After cloning the repository, navigate to the project folder and run the Docker Compose command:
 
@@ -55,7 +55,7 @@ Run the RestApiService: Once the services are up, run the container program rela
 
 Access the Swagger UI: After the services and the API gateway are running, you can access the Swagger UI to explore the available API endpoints via:
 
-	  http://localhost:32769/swagger/index.html
+	http://localhost:32769/swagger/index.html
 	 
 
 
