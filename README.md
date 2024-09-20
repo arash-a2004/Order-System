@@ -17,19 +17,19 @@ This project is a bookstore order system where users can view available books th
 ## Technologies Used
 
 ### Backend
-- **.NET Core 87**: The framework for building the APIs and background services.
-- **CQRS Pattern**: Separates read and write operations, improving scalability by allowing independent scaling and simplifying the system's structure.
+- **ASP.NET web api**: The framework for building the APIs and background services.
+- **CQRS Pattern**: Separates read and write operations, improving scalability by allowing independent scaling and simplifying the system's structure. for more detail : https://learn.microsoft.com/en-us/azure/architecture/patterns/cqrs
 - **MediatR**: A lightweight library that enables request/response and notification-based handling, making the code more modular and testable. MediatR also helps isolate different components, allowing their independent use in different projects.
 - **Entity Framework Core**: Used for ORM with SQL Server as the database. EF Core simplifies database operations and mapping, allowing easy integration with C#.
 - **SQL Server**: A relational database that efficiently stores and manages data. It's a good fit due to its robustness and scalability in enterprise applications.
-- **RabbitMQ**: Used for asynchronous message handling between services. RabbitMQ allows us to handle background tasks and long-running processes, improving system responsiveness.
+- **RabbitMQ**: Used for asynchronous message handling between services. RabbitMQ allows us to handle background tasks and long-running processes, improving system responsiveness.https://www.rabbitmq.com/tutorials/tutorial-one-dotnet
 
 ### Docker
 - **Docker**: Used to containerize the application, making it easy to deploy, run, and scale across different environments.
 - **Docker Compose**: Helps in orchestrating multiple containers like SQL Server, RabbitMQ, and the application itself, ensuring they run seamlessly together.
 
 ### Testing & Seeding
-- **Bogus**: A library to generate fake data for testing, allowing us to populate the database with sample data during development.
+- **Bogus**: A library to generate fake data for testing, allowing us to populate the database with sample data during development.mode detail : https://github.com/bchavez/Bogus
 
 ## Why These Technologies?
 
